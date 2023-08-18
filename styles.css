@@ -23,26 +23,32 @@ img{
   height: 100%;
 }
 
-label{
+.label-signUp{
   display: grid;
   font-weight: 500;
-  font-size: 15px;
-  color: #a9aeb3;
-  /* color:#00000078; */
+  font-size: 14px;
+  color: #a9aeb3;  
 }
 
-input{
+.label-signUp:nth-child(7){
+  display: flex; 
+  align-items: center;
+  gap: 8px;
+  font-size: .85em;
+}
+
+.input-signUp{
   all: initial;
-  padding: 8px 0px 5px 0px;
-  font-size: 14px;
+  padding: 5px 0px ;
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   border-radius: 0;  
   border-bottom: 2px #0000004f solid;
-  transition: border .3s;
+  transition: border .2s;
 }
 
-input:focus, input:active {  
+.input-signUp:focus, .input-signUp:active {  
   caret-color: #03C988;
   border-color:#03C988;
   border-bottom: 2px #03C988 solid;
@@ -57,18 +63,25 @@ input:focus, input:active {
   flex-direction: column;
 }
 
+.msjError{
+  display:none;
+  color: #ff0000d1;  
+  margin-top: 12px;
+  font-size: .95em;
+}
+
 @media (min-width: 320px) {  
 
-  .sign-up__image{
+  .signUp-image{
     background-image: url(./images/hero-5-transformed.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
     background-position-y: top;
-    height: 200px;
+    height: 212px;
   }
 
-  .sign-up__image-solapa{
+  .signUp-image-solapa{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,18 +90,17 @@ input:focus, input:active {
 
     background-color: #00000099;
   }
-
-  .sign-up__image-solapa span{    
+  
+  .signUp-image img{
+    object-fit: cover;  
+    width: 65px;
+    height: 65px;
+  }
+  .signUp-image-solapa span{    
     color: #fff;
     font-weight: 700;
     margin-top: 10px;
     font-size: .97em;
-  }
-
-  .sign-up__image img{
-    object-fit: cover;  
-    width: 65px;
-    height: 65px;
   }
 
   .title{
@@ -96,20 +108,20 @@ input:focus, input:active {
   }
 
   .subtitle{
-    margin-top: 5px;
-    font-size: .9em;
-    font-weight: 500;
-    color: #00000099;
+    margin-top: 4px;
+    font-size: .9em;   
+    font-weight: 600;
+    color: #00000061;
   }
 
-  .form{
+  .form-signUp{
     display: grid;    
     gap: 24px;
     
     margin-top: 26px;
   }
 
-  .sign-up__button{
+  .form-signUp-button{
     padding: 16px;
     margin-top: 14px;
     color: #202020;
@@ -117,6 +129,12 @@ input:focus, input:active {
     font-weight: 700;
     border: none;
     background-color: #03C988;
+    transition: background-color .3s ease-in;
+  }
+
+  .form-signUp-button:hover{
+    cursor: pointer;
+    background-color: #03c987b7;
   }
 
   .alreadyAccount{

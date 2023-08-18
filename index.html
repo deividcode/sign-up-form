@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/headphones-icon-1.svg" />
+
+  <title>Camping</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+  <main class="main">
+
+    <section class="sign-up">
+      <div class="sign-up__image">        
+        <div class="sign-up__image-solapa">          
+          <img src="/images/headphones-icon-1.svg" alt="Camping">         
+          <span>Music L.A</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="title">Sign Up</h2>      
+        <p class="subtitle">Enjoy Good Music</p>
+        <form class="form" name="form" action="post">
+
+          <label for="name">
+            Name
+            <input required type="text" name="name" id="name">
+          </label>          
+
+          <label for="lastname">
+            Last Name
+            <input required type="text" name="lastname" id="lastname">
+          </label>
+
+          <label for="email">
+            Email
+            <input required type="email" name="email" id="email">          
+          </label>
+
+          <label for="phoneNumber">
+            Phone Number
+            <input required max="9" type="phoneNumber" name="phoneNumber" id="phoneNumber">          
+          </label>
+
+          <label for="password">
+            Password
+            <input required type="password" name="password" id="password">          
+          </label>
+
+          <label for="password">
+            Confirm Password
+            <input required type="confirmPassword" name="confirmPassword" id="confirmPassword">          
+          </label>
+          
+          <button type="submit" class="sign-up__button">Create Account</button>
+        </form>
+        <p class="alreadyAccount">Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </section>
+
+  </main>  
+  <script src="/main.js"></script>
+</body>
+</html>

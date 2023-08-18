@@ -60,7 +60,7 @@ input:focus, input:active {
 @media (min-width: 320px) {  
 
   .sign-up__image{
-    background-image: url(/images/hero-5-transformed.png);
+    background-image: url(./images/hero-5-transformed.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;

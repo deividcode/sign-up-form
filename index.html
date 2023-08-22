@@ -11,6 +11,11 @@
 
 </head>
 <body>  
+
+  <div class="modal">
+    
+  </div>
+
   <main class="main">
 
     <section class="sign-up">
@@ -21,49 +26,54 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="signUp-form container">
         <h2 class="title">Sign Up</h2>      
         <p class="subtitle">Enjoy Good Music</p>
         <form class="form-signUp" name="form" action="post">
 
-          <label for="name" class="label-signUp">
-            Name
-            <input required type="text" name="name" id="name" class="input-signUp">
-          </label>          
-
-          <label for="lastname" class="label-signUp">
-            Last Name
-            <input required type="text" name="lastname" id="lastname" class="input-signUp">
-          </label>
-
-          <label for="email" class="label-signUp">
-            Email
-            <input required type="email" name="email" id="email" class="input-signUp">          
-          </label>
-
-          <label for="phoneNumber" class="label-signUp">
-            Phone Number
-            <input required max="9" type="phoneNumber" name="phoneNumber" id="phoneNumber" class="input-signUp">          
-          </label>
-
-          <label for="password" class="label-signUp">
-            Password
-            <input required type="password" name="password" id="password" class="input-signUp">          
-          </label>
-
-          <label for="confirmPassword" class="label-signUp">
-            Confirm Password
-            <input required type="password" name="confirmPassword" id="confirmPassword" class="input-signUp">          
-            <span class="msjError"></span>
-          </label>
+          <div class="form-field">
+            <label for="name" class="label-signUp">
+              Name
+              <input required pattern="[A-Za-z]*" type="text" name="name" id="name" class="input-signUp">
+            </label>          
+  
+            <label for="lastname" class="label-signUp">
+              Last Name
+              <input required pattern="[A-Za-z]*" type="text" name="lastname" id="lastname" class="input-signUp">
+            </label>
+  
+            <label for="email" class="label-signUp">
+              Email
+              <input required type="email" name="email" id="email" class="input-signUp">          
+            </label>
+  
+            <label for="phoneNumber" class="label-signUp">
+              Phone Number
+              <input required maxlength="7" type="phoneNumber" name="phoneNumber" id="phoneNumber" class="input-signUp">          
+            </label>
+  
+            <label for="password" class="label-signUp">
+              Password
+              <input required type="password" name="password" id="password" class="input-signUp">          
+            </label>
+  
+            <label for="confirmPassword" class="label-signUp">
+              Confirm Password
+              <input required type="password" name="confirmPassword" id="confirmPassword" class="input-signUp">          
+            </label>
+          </div>
           
-          
-          <label for="terms" class="label-signUp">
-            <input required type="checkbox" name="terms" id="terms">
-            <p>I Agree with the <a href="#">terms</a> of services</p>          
-          </label>
+          <span class="msjError"></span>
 
-          <button type="submit" class="form-signUp-button">Create Account</button>
+          <div class="form-send">
+            <label for="terms">
+              <input required type="checkbox" name="terms" id="terms">
+              <p>I Agree with the <a href="#">terms</a> of services</p>          
+            </label>
+  
+            <button type="submit" class="form-signUp-button">Create Account</button>
+          </div>
+          
         </form>
         <p class="alreadyAccount">Already have an account? <a href="#">Log in</a></p>
       </div>
